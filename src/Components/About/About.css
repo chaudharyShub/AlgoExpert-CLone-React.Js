@@ -1,0 +1,58 @@
+.about_main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5em;
+}
+
+.what_is_algo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.what_is_algo>p {
+    font-size: 35px;
+}
+
+#watch_video {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 9px 17px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top: -10px;
+
+    /* ANIMATION */
+    background: linear-gradient(to right, #02203c 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: 0.35s ease;
+}
+
+#watch_video:hover {
+    background-position: left bottom;
+    color: white;
+}
+
+#watch_video>img {
+    width: 25px;
+    margin-right: 10px;
+    transition: 0.5s ease;
+}
+
+#watch_video:hover img {
+    filter: invert(100%);
+}
+
+@media only screen and (min-width: 992px) {
+    .aboutItemContainer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 30px;
+        column-gap: 30px;
+    }
+}

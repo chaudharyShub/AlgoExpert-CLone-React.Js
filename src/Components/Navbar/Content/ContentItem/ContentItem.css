@@ -1,0 +1,17 @@
+.componentItemMain {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.componentItemMain h3 {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.componentItemMain img {
+    width: 40px;
+    margin: 0 2em 0 1em;
+    filter: invert(100%);
+}

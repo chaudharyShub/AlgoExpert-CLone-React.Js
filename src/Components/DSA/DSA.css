@@ -1,0 +1,47 @@
+.dsaMain {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    perspective: 1500px;
+}
+
+.innerDsaMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dsaButton {
+    margin-top: 1em;
+}
+
+.dsaMain>img {
+    width: 70%;
+    margin-top: 4em;
+    box-shadow: 0 0 50px rgb(35 35 35);
+    border-radius: 10px;
+    transform: rotateX(-10deg) rotateY(15deg);
+}
+
+@media only screen and (min-width: 992px) {
+    .dsaMain {
+        position: relative;
+        height: 70vh;
+    }
+
+    .innerDsaMain {
+        position: absolute;
+        right: 0;
+        width: 50%;
+    }
+
+    .dsaMain>img {
+        position: absolute;
+        left: -7em;
+        width: 50%;
+        top: 0;
+    }
+}

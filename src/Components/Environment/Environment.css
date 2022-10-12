@@ -1,0 +1,39 @@
+.environment_main {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    perspective: 1500px;
+}
+
+.environmentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.environment_main>img {
+    width: 70%;
+    margin-top: 3em;
+    box-shadow: 0 0 50px rgb(35, 35, 35);
+    border-radius: 3px;
+
+    transform: rotateY(-20deg) rotateX(15deg);
+}
+
+@media only screen and (min-width: 992px) {
+    .environment_main {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .environmentContainer {
+        width: 50%;
+    }
+    .environment_main> img {
+        width: 47%;
+        position: absolute;
+        right: 0;
+    }
+}

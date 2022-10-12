@@ -1,0 +1,137 @@
+.companies_main {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 100px 20px;
+}
+
+.companies_container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 50px;
+    box-sizing: border-box;
+    box-shadow: 0 0 30px rgb(200, 200, 200);
+    border-radius: 5px;
+}
+
+.companies_heading {
+    margin: 2em 0;
+}
+
+.companies_heading>h1 {
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+
+.companies_heading>p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.marquee {
+    height: 20vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.marquee:before,
+.marquee:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: '';
+    z-index: 1;
+}
+
+.marquee:before {
+    left: 0;
+    background: linear-gradient(to right, white 10%, transparent 50%);
+}
+
+.marquee:after {
+    right: 0;
+    background: linear-gradient(to left, white 10%, transparent 50%);
+}
+
+.marquee_content_left {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    list-style: none;
+    height: 100%;
+    animation: scrollingLeft 50s linear infinite;
+}
+
+.companyLogo {
+    width: 6em;
+}
+
+.marquee_content_right {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    list-style: none;
+    height: 100%;
+    animation: scrollingRight 50s linear infinite;
+}
+
+@keyframes scrollingLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-180vw);
+    }
+}
+
+@keyframes scrollingRight {
+    0% {
+        transform: translateX(-180vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.marquee_content_left li {
+    width: 30vw;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.marquee_content_right li {
+    width: 30vw;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+@media only screen and (min-width: 500px){
+    .companyLogo {
+        width: 8em;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .companyLogo {
+        width: 10em;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .companyLogo {
+        width: 12em;
+    }
+}

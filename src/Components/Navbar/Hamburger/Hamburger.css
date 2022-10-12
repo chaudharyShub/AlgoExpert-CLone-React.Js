@@ -1,0 +1,66 @@
+.hamburgerMain {
+    height: 100%;
+    background-color: #02203c;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 420px;
+    width: 80%;
+    z-index: 30;
+    padding: 60px 20px 20px;
+}
+
+.divContent {
+    height: 100%;
+}
+
+.close {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -50px;
+    cursor: pointer;
+}
+
+.close > img {
+    width: 25px;
+    opacity: 0.7;
+}
+
+.hamburgerHeading {
+    color: white;
+    margin: 0 0 40px;
+}
+
+.hamburgerList {
+    padding: 0;
+}
+
+.hamburgerList>li:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburgerList img {
+    width: 10px;
+    object-fit: contain;
+    margin-left: 2em;
+    filter: invert(100%);
+    transform: rotate(90deg);
+}
+
+.hamburgerList>li {
+    list-style: none;
+    color: white;
+    padding: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+}
+
+.hamburgerList>li:hover {
+    background-color: rgb(0 0 0 / 50%);
+}
